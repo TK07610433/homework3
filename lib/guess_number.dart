@@ -20,19 +20,6 @@ void main() {
   for (var i = 0; i < Game.guessCountList.length; i++) {
     print('🚀 Game #${i + 1}: ${Game.guessCountList[i]} guesses');
   }
-
-  /*var myList = [];
-  myList.add(1);
-  myList.add('hello');
-  myList.add(false);
-
-  for (var i = 0; i < myList.length; i++) {
-    print(myList[i]);
-  }
-
-  myList.forEach((item) {
-    print(item);
-  });*/
 }
 
 void playGame() {
@@ -71,7 +58,6 @@ void playGame() {
       print('║ ➜ $guess is CORRECT ❤, total guesses: ${game.guessCount}');
       print('╟────────────────────────────────────────');
       isCorrect = true;
-      //Game.guessCountList.add(game.guessCount);
       game.addCountList();
     }
   } while (!isCorrect);
